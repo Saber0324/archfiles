@@ -5,6 +5,7 @@ if command -v paru &>/dev/null; then
   AUR_HELPER="paru"
 elif command -v yay &>/dev/null; then
   AUR_HELPER="yay"
+fi
 
 echo "Installing base packages..."
 
