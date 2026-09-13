@@ -46,4 +46,5 @@ with open(dest, "w") as f:
 print(f"greetd config merged successfully with command: {greeter_cmd}")
 EOF
 
+sudo systemctl disable --now display-manager.service 2>/dev/null || true
 sudo systemctl enable greetd.service
