@@ -31,7 +31,6 @@ depends=(
   'imagemagick'
   'just'
   'keyd'
-  'localsend-bin'
   'neovim'
   'noctalia'
   'noctalia-greeter'
