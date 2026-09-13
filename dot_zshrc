@@ -141,6 +141,7 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
 export VISUAL="nvim"
+export PAGER="bat"
 
 # Custom command to copy files from the terminal
 wlt() {

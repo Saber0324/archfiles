@@ -5,6 +5,8 @@ ui_scale = 1.1500000096857548
 
 [bar.default]
 background_opacity = 0.87999998033046722
+capsule = true
+capsule_opacity = 0.59999998658895493
 center = [ "media", "clock", "workspaces" ]
 contact_shadow = true
 end = [ "widget", "tray", "notifications", "clipboard", "volume", "control-center", "session" ]
@@ -13,7 +15,7 @@ margin_ends = 149
 padding = 15
 radius = 26
 start = [ "group:g1", "widget_2", "recorder" ]
-widget_spacing = 14
+widget_spacing = 4
 
     [[bar.default.capsule_group]]
     accordion = false
@@ -192,7 +194,7 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kitty", "niri", "qt", "starship" ]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
     community_ids = [ "fastfetch" ]
 
 [wallpaper.default]
