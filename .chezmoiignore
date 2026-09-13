@@ -1,0 +1,5 @@
+packages/
+**/dot_git
+**/logs
+**/OpenRGB/plugins
+**/user_credentials.json

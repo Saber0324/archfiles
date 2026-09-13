@@ -1,0 +1,178 @@
+{
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        },
+        "firewall_config": {
+            "firewall": "ufw"
+        },
+        "fonts_config": {
+            "fonts": [
+                "noto-fonts-emoji",
+                "noto-fonts",
+                "noto-fonts-cjk"
+            ]
+        },
+        "print_service_config": {
+            "enabled": true
+        }
+    },
+    "archinstall_language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Grub",
+        "removable": true,
+        "uki": true
+    },
+    "custom_commands": [],
+    "disk_config": {
+        "btrfs_options": {
+            "snapshot_config": {
+                "type": "Snapper"
+            }
+        },
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot",
+                            "esp"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "2bea4345-52a5-454a-92bc-8883559b3b67",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [
+                            {
+                                "mountpoint": "/",
+                                "name": "@"
+                            },
+                            {
+                                "mountpoint": "/home",
+                                "name": "@home"
+                            },
+                            {
+                                "mountpoint": "/var/log",
+                                "name": "@log"
+                            },
+                            {
+                                "mountpoint": "/var/cache/pacman/pkg",
+                                "name": "@pkg"
+                            }
+                        ],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "btrfs",
+                        "mount_options": [
+                            "compress=zstd"
+                        ],
+                        "mountpoint": null,
+                        "obj_id": "67d1aa05-c320-4758-9f56-0c535a6d89f5",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 511033999360
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "hostname": "archlinux",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "console_font": "default8x16",
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "United States": [
+                "http://mirrors.rit.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.rit.edu/archlinux/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": []
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+        "chezmoi"
+    ],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
+    },
+    "profile_config": {
+        "gfx_driver": "Nvidia (open kernel module for newer GPUs, Turing+)",
+        "greeter": "greetd",
+        "profile": {
+            "custom_settings": {
+                "Hyprland": {
+                    "seat_access": "polkit"
+                }
+            },
+            "details": [
+                "Hyprland"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
+    "timezone": "America/Santo_Domingo",
+    "version": "4.4"
+}

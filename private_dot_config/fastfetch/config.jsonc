@@ -1,0 +1,85 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/saber/Pictures/Icons/sacrifice_mark_fastfetch.png",
+    "type": "kitty",
+    "height": 13,
+    "width": 20,
+    "padding": {
+      "top": 0,
+      "right": 1
+    },
+    "color": {
+      "1": "#63aaaa",
+      "2": "#63a7a7"
+    }
+  },
+  "display": {
+    "key": {
+      "width": 15
+    },
+    "color": {
+      "keys": "#aaaaaa",
+      "output": "37",
+      "title": "#a7a7a7"
+    },
+    "percent": {
+      "color": {
+        "green": "#cccccc",
+        "yellow": "#e99696",
+        "red": "#dddddd"
+      }
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{#35}{user-name}{#37}@{#35}{host-name}"
+    },
+    "separator",
+    {
+      "type": "os",
+      "key": " OS"
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel"
+    },
+    {
+      "type": "packages",
+      "key": " Packages"
+    },
+    {
+      "type": "wm",
+      "key": " WM"
+    },
+    {
+      "type": "terminal",
+      "key": " Terminal"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": " CPU"
+    },
+    {
+      "type": "command",
+      "key": " GPU",
+      "text": "nvidia-smi --query-gpu=name --format=csv,noheader | sed 's/ Lite Hash Rate//'"
+    },
+    {
+      "type": "memory",
+      "key": " Memory"
+    },
+    {
+      "type": "disk",
+      "key": " Disk"
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    }
+  ]
+}

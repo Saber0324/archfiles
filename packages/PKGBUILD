@@ -1,0 +1,55 @@
+# Maintainer: Saber <saber0324 at proton dot me>
+pkgname=dotfiles-metapackage
+pkgver=0.67
+pkgrel=1
+pkgdesc="A meta-package that installs useful stuff"
+arch=('any')
+url="https://github.com/Saber0324/archfiles"
+license=('MIT')
+
+depends=(
+  'accountsservice'
+  'base-devel'
+  'bat'
+  'bitwarden'
+  'brave-origin-bin'
+  'btop'
+  'cowsay'
+  'dnsmasq'
+  'eza'
+  'fastfetch'
+  'fd'
+  'flatpak'
+  'fzf'
+  'ghostty'
+  'git'
+  'gpu-screen-recorder'
+  'gpu-screen-recorder-ui'
+  'greetd'
+  'hyprshot'
+  'i2c-tools'
+  'imagemagick'
+  'just'
+  'keyd'
+  'localsend-bin'
+  'neovim'
+  'noctalia'
+  'noctalia-greeter'
+  'noto-fonts-cjk'
+  'noto-fonts-emoji'
+  'otf-monaspace-nerd'
+  'pacman-contrib'
+  'plutonium-launcher-bin'
+  'prismlauncher'
+  'ripgrep'
+  'steam'
+  'ttf-jetbrains-mono-nerd'
+  'unrar'
+  'unzip'
+  'uv'
+  'wget'
+  'wl-clipboard'
+  'xdg-desktop-portal-gnome'
+  'zoxide'
+  'zsh'
+)

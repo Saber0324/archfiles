@@ -1,0 +1,51 @@
+    OpenRGB v0.9+ (1.0rc3)
+    Commit:  from 
+    Launched: 20260901_222746
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: off.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for off
+53    |Info:    [ResourceManager] Initializing HID interfaces: Success
+53    |Info:    ------------------------------------------------------
+53    |Info:    |               Start device detection               |
+53    |Info:    ------------------------------------------------------
+65    |Info:    ------------------------------------------------------
+65    |Info:    |             Detecting I2C interfaces               |
+65    |Info:    ------------------------------------------------------
+65    |Info:    [ResourceManager] Registering I2C interface: SMBus PIIX4 adapter port 2 at 0b00 (/dev/i2c-1) Device 1022:790B Subsystem: 1462:7C56
+65    |Info:    [ResourceManager] Registering I2C interface: SMBus PIIX4 adapter port 1 at 0b20 (/dev/i2c-2) Device 1022:790B Subsystem: 1462:7C56
+65    |Info:    [ResourceManager] Registering I2C interface: SMBus PIIX4 adapter port 0 at 0b00 (/dev/i2c-0) Device 1022:790B Subsystem: 1462:7C56
+65    |Info:    ------------------------------------------------------
+65    |Info:    |               Detecting I2C devices                |
+65    |Info:    ------------------------------------------------------
+316   |Info:    [ENE DRAM] Registering RGB controller
+493   |Info:    [ENE DRAM] Registering RGB controller
+1077  |Info:    ------------------------------------------------------
+1077  |Info:    |            Detecting I2C DIMM modules              |
+1077  |Info:    ------------------------------------------------------
+2068  |Info:    [ResourceManager] Detected occupied slot 3, bus 2, type DDR4
+3513  |Info:    [ResourceManager] Detected occupied slot 4, bus 2, type DDR4
+4747  |Info:    ------------------------------------------------------
+4747  |Info:    |               Detecting I2C PCI devices            |
+4747  |Info:    ------------------------------------------------------
+4749  |Info:    ------------------------------------------------------
+4749  |Info:    |               Detecting HID devices                |
+4749  |Info:    ------------------------------------------------------
+4801  |Info:    [AMD Wraith Prism] Registering RGB controller
+4876  |Info:    [MSI MPG B550 GAMING PLUS (MS-7C56)] Registering RGB controller
+4913  |Info:    [Razer Cobra] Registering RGB controller
+4913  |Info:    ------------------------------------------------------
+4913  |Info:    |            Detecting libusb HID devices            |
+4913  |Info:    ------------------------------------------------------
+5040  |Info:    ------------------------------------------------------
+5040  |Info:    |              Detecting other devices               |
+5040  |Info:    ------------------------------------------------------
+5072  |Info:    [ResourceManager] Calling Post-detection callbacks
+5072  |Info:    ------------------------------------------------------
+5072  |Info:    |                Detection completed                 |
+5072  |Info:    ------------------------------------------------------
+5073  |Info:    [ProfileManager] Profile loading: Succeeded for ENE DRAM @ I2C: SMBus PIIX4 adapter port 0 at 0b00 (/dev/i2c-0), address 0x72
+5073  |Info:    [ProfileManager] Profile loading: Succeeded for ENE DRAM @ I2C: SMBus PIIX4 adapter port 0 at 0b00 (/dev/i2c-0), address 0x73
+5073  |Info:    [ProfileManager] Profile loading: Succeeded for AMD Wraith Prism @ HID: /dev/hidraw6
+5073  |Info:    [ProfileManager] Profile loading: Succeeded for MSI MPG B550 GAMING PLUS (MS-7C56) @ HID: /dev/hidraw8
+5073  |Info:    [ProfileManager] Profile loading: Succeeded for Razer Cobra @ HID: /dev/hidraw2

@@ -1,0 +1,56 @@
+    OpenRGB v0.9+ (1.0rc3)
+    Commit:  from 
+    Launched: 20260825_214743
+====================================================================================================
+
+53    |Info:    [ResourceManager] Saving detector settings
+54    |Info:    [ResourceManager] Initializing HID interfaces: Success
+54    |Info:    ------------------------------------------------------
+54    |Info:    |               Start device detection               |
+54    |Info:    ------------------------------------------------------
+66    |Info:    ------------------------------------------------------
+66    |Info:    |             Detecting I2C interfaces               |
+66    |Info:    ------------------------------------------------------
+66    |Info:    [ResourceManager] Registering I2C interface: NVIDIA i2c adapter 2 at 2b:00.0
+ (/dev/i2c-3) Device 10DE:2488 Subsystem: 19DA:8617
+66    |Info:    [ResourceManager] Registering I2C interface: SMBus PIIX4 adapter port 2 at 0b00 (/dev/i2c-1) Device 1022:790B Subsystem: 1462:7C56
+66    |Info:    [ResourceManager] Registering I2C interface: NVIDIA i2c adapter 7 at 2b:00.0
+ (/dev/i2c-6) Device 10DE:2488 Subsystem: 19DA:8617
+66    |Info:    [ResourceManager] Registering I2C interface: NVIDIA i2c adapter 5 at 2b:00.0
+ (/dev/i2c-4) Device 10DE:2488 Subsystem: 19DA:8617
+66    |Info:    [ResourceManager] Registering I2C interface: SMBus PIIX4 adapter port 1 at 0b20 (/dev/i2c-2) Device 1022:790B Subsystem: 1462:7C56
+66    |Info:    [ResourceManager] Registering I2C interface: SMBus PIIX4 adapter port 0 at 0b00 (/dev/i2c-0) Device 1022:790B Subsystem: 1462:7C56
+66    |Info:    [ResourceManager] Registering I2C interface: NVIDIA i2c adapter 8 at 2b:00.0
+ (/dev/i2c-7) Device 10DE:2488 Subsystem: 19DA:8617
+66    |Info:    [ResourceManager] Registering I2C interface: NVIDIA i2c adapter 6 at 2b:00.0
+ (/dev/i2c-5) Device 10DE:2488 Subsystem: 19DA:8617
+66    |Info:    ------------------------------------------------------
+66    |Info:    |               Detecting I2C devices                |
+66    |Info:    ------------------------------------------------------
+628   |Info:    ------------------------------------------------------
+628   |Info:    |            Detecting I2C DIMM modules              |
+628   |Info:    ------------------------------------------------------
+1475  |Info:    [ResourceManager] Detected occupied slot 3, bus 5, type DDR4
+2760  |Info:    [ResourceManager] Detected occupied slot 4, bus 5, type DDR4
+3795  |Info:    ------------------------------------------------------
+3795  |Info:    |               Detecting I2C PCI devices            |
+3795  |Info:    ------------------------------------------------------
+3796  |Info:    ------------------------------------------------------
+3796  |Info:    |               Detecting HID devices                |
+3796  |Info:    ------------------------------------------------------
+3849  |Info:    [AMD Wraith Prism] Registering RGB controller
+3921  |Info:    [MSI MPG B550 GAMING PLUS (MS-7C56)] Registering RGB controller
+3954  |Info:    [Razer Cobra] Registering RGB controller
+3954  |Info:    ------------------------------------------------------
+3954  |Info:    |            Detecting libusb HID devices            |
+3954  |Info:    ------------------------------------------------------
+4072  |Info:    ------------------------------------------------------
+4072  |Info:    |              Detecting other devices               |
+4072  |Info:    ------------------------------------------------------
+4101  |Info:    [ResourceManager] Calling Post-detection callbacks
+4101  |Info:    ------------------------------------------------------
+4101  |Info:    |                Detection completed                 |
+4101  |Info:    ------------------------------------------------------
+4101  |Dialog:  <h2>Warning:</h2><p>One or more I2C/SMBus interfaces failed to initialize.</p><p>Depending on which interfaces failed to initialize, some RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB graphics cards may not be available in OpenRGB.</p><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>For OpenRGB to access these devices, you must load the i2c-dev module along with the correct I2C driver module for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>If you are not using any of the devices listed above, you can safely ignore this message.</p>
+158739|Info:    [ProfileManager] Found file: off.orp attempting to validate header
+158739|Info:    [ProfileManager] Valid v5 profile found for off
