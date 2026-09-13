@@ -16,7 +16,7 @@ cp "$HOME/.local/share/chezmoi/packages/PKGBUILD" "$BUILD_DIR" || {
 
 cd "$BUILD_DIR"
 
-"$AUR_HELPER" -Bi --noconfirm || {
+"$AUR_HELPER" -Bi . --noconfirm || {
   echo "Error building the packages."
   exit 1
 }
