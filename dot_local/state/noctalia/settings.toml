@@ -9,12 +9,12 @@ capsule = true
 capsule_opacity = 0.59999998658895493
 center = [ "media", "clock", "workspaces" ]
 contact_shadow = true
-end = [ "widget", "tray", "notifications", "clipboard", "volume", "control-center", "session" ]
+end = [ "wallpaper", "widget", "tray", "notifications", "clipboard", "volume", "control-center", "session" ]
 font_family = "MonaspiceAr Nerd Font"
 margin_ends = 149
 padding = 15
 radius = 26
-start = [ "group:g1", "widget_2", "recorder" ]
+start = [ "group:g1", "widget_2", "recorder", "bar" ]
 widget_spacing = 4
 
     [[bar.default.capsule_group]]
@@ -156,7 +156,13 @@ nightlight = false
 power_profile = false
 
 [plugins]
-enabled = [ "yuuto/arch-updater", "alexander/screen-toolkit", "noctalia/screen_recorder" ]
+enabled = [
+    "yuuto/arch-updater",
+    "alexander/screen-toolkit",
+    "noctalia/screen_recorder",
+    "yuuto/calculator",
+    "kenn/keybind-cheatsheet"
+]
 
 [shell]
 app_icon_color = "tertiary"
@@ -173,7 +179,6 @@ show_location = false
     speed = 1.8500000275671482
 
     [shell.greeter_sync]
-    auto_sync = true
     privilege_command = "ghostty -e pkexec"
 
     [shell.launcher]
@@ -206,8 +211,12 @@ path = "/home/saber/Pictures/Wallpapers/berserk.jpg"
 [wallpaper.monitors.HDMI-A-1]
 path = "/home/saber/Pictures/Wallpapers/berserk.jpg"
 
+[widget.bar]
+type = "yuuto/calculator:bar"
+
 [widget.clock]
 format = "{:%I:%M}"
+tooltip_format = "{:%H:%M}"
 
 [widget.media]
 hide_when_no_media = true
