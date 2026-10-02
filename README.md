@@ -4,6 +4,7 @@
 
 - Chezmoi
 - Git
+- Hyprland
 
 ## Installation
 
