@@ -160,8 +160,8 @@ enabled = [
     "yuuto/arch-updater",
     "alexander/screen-toolkit",
     "noctalia/screen_recorder",
-    "yuuto/calculator",
-    "kenn/keybind-cheatsheet"
+    "kenn/keybind-cheatsheet",
+    "noctalia/bitwarden"
 ]
 
 [shell]
