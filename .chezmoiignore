@@ -1,5 +1,5 @@
 packages/
-**/dot_git
+**/.git
 **/logs
 **/OpenRGB/plugins
 **/user_credentials.json
