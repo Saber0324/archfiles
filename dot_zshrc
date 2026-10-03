@@ -142,6 +142,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export PAGER="bat"
+export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 
 # Custom command to copy files from the terminal
 wlt() {
