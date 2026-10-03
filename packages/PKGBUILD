@@ -13,6 +13,7 @@ depends=(
   'bat'
   'bc'
   'bitwarden'
+  'bitwarden-cli'
   'brave-origin-bin'
   'btop'
   'cowsay'
