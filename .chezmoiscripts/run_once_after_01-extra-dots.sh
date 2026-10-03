@@ -13,9 +13,20 @@ if [[ $nvim_install == [Nn]* ]]; then
   echo "Skipping Neovim installation..."
 else
   NVIM_DIR="$HOME/.config/nvim"
+  proceed=true
+
   if [[ -d "$NVIM_DIR" ]]; then
-    echo "Warning: $NVIM_DIR already exists. Skipping clone to avoid overwriting."
-  else
+    read -p "Directory $NVIM_DIR already exists. Delete and replace it? [y/N]: " delete_nvim
+    if [[ $delete_nvim == [Yy]* ]]; then
+      echo "Removing existing directory..."
+      rm -rf "$NVIM_DIR"
+    else
+      echo "Skipping Neovim installation to preserve existing files."
+      proceed=false
+    fi
+  fi
+
+  if [[ $proceed == true ]]; then
     echo "Installing Neovim dotfiles..."
     git clone https://github.com/Saber0324/nvimconf "$NVIM_DIR"
   fi
@@ -29,9 +40,20 @@ if [[ $hypr_install == [Nn]* ]]; then
   echo "Skipping Hyprland installation..."
 else
   HYPR_DIR="$HOME/.config/hypr"
+  proceed=true
+
   if [[ -d "$HYPR_DIR" ]]; then
-    echo "Warning: $HYPR_DIR already exists. Skipping clone to avoid overwriting."
-  else
+    read -p "Directory $HYPR_DIR already exists. Delete and replace it? [y/N]: " delete_hypr
+    if [[ $delete_hypr == [Yy]* ]]; then
+      echo "Removing existing directory..."
+      rm -rf "$HYPR_DIR"
+    else
+      echo "Skipping Hyprland installation to preserve existing files."
+      proceed=false
+    fi
+  fi
+
+  if [[ $proceed == true ]]; then
     echo "Installing Hyprland dotfiles..."
     git clone https://github.com/Saber0324/hypr "$HYPR_DIR"
   fi
